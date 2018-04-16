@@ -26,10 +26,10 @@ class Form extends React.Component {
   }
   
   render() {
+  {/* The ref property can be used to and id on an element. This is not the most common way to get a controlled component */}
   	return(
     	<form onSubmit={this.handleSubmit}>
     	  <input type="text"
-        {/* The ref property can be used to and id on an element. This is not the most common way to get a controlled component */}
         ref={(input) => this.userNameInput = input}
         placeholder="Github username" />
         <button type="submit">Add card</button>
